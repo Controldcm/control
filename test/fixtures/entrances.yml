@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  input_id: 1
+  amount: 1
+
+two:
+  input_id: 1
+  amount: 1

@@ -1,0 +1,12 @@
+<tr id=<%= "entrance_#{entrance.id}" %>>
+ <td><%= entrance.id %></td>
+ <td><%= entrance.input.name %></td>
+ <td><%= entrance.amount %></td>
+ <td>
+   <%= link_to image_tag('ver.png', :width=>'30', :title=>'Mostrar' ), entrance, :remote => true %> |
+   <%= link_to image_tag('edit.png', :width=>'30', :title=>'Editar' ), edit_entrance_path(entrance), :remote => true %> |
+   <%= link_to image_tag('destroy.png', :width=>'30', :title=>'Eliminar' ), entrance_path(entrance), 
+       :data => { :confirm => 'Esta Seguro?' },
+       :method => :delete, :remote => true %>
+ </td>
+</tr>

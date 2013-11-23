@@ -1,0 +1,34 @@
+<%- model_class = Entrance -%>
+<div class="page-header">
+ <h3 id='order'>Entradas</h3>
+</div>
+<br>
+ <table class="table table-striped">
+ <thead>
+   <tr>
+     <th>Id</th>
+     <th>Prenda</th>
+		 <th>Cantidad</th>
+     <th></th>
+   </tr>
+ </thead>
+ <tbody>
+     <%=render @entrances%>
+ </tbody>
+ <tfoot>
+ </tfoot>
+</table>
+
+<br> 
+
+<%= link_to 'Nueva Entrada', new_entrance_path, :remote => true, :class => 'btn btn-primary' %>
+
+  <div id='ocupa' class="pagination">
+   <%= will_paginate(@entrances, :renderer => WillPaginate::ActionView::LinkRenderer,
+                                :previous_label => '&laquo; Anterior', 
+                                :next_label => 'Siguiente &raquo;') %>
+
+   <br>                             
+                                
+   <p id='total' class="pull-right"> Total entradas : <%= @entrances.count %> </p>
+</div>

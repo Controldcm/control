@@ -1,0 +1,42 @@
+<div id='book'>
+    <%= link_to image_tag("home.png", :size => "22x22"), root_path, :class => 'brand' %>
+</div>
+
+<% if  can? :manage, :admin %>
+    <li id='admin'><a href="#myModal" role="button"  data-toggle="modal">Admin</a></li>
+    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    	<%= render 'layouts/modal_admin' %>
+	</div>
+<% end %>       
+
+<% if can? :manage, [:entrances, :inputs] %>
+	<li id='invent'> <a href="#myModall" role="button"  data-toggle="modal">Inventario</a></li>
+	<div id="myModall" class="modal hide fade" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    	<%= render 'layouts/modal_inventory' %>
+	</div>
+<% end %>	
+
+<% if can? :manage, Client %>
+  <li  id='client'><%= link_to 'Clientes', :clients, :class=>'colc' %></li>
+<% end %>
+
+<% if can? :manage, ProductionOrder %>
+  <li id='orden'><%= link_to 'O. Producc', :production_orders, :class=>'colc' %></li>
+<% end %> 
+
+<% if can? :manage, Input %>
+  <li id='materiales'><%= link_to 'Materiales/Insumos', :inputs, :class=>'colc' %></li>
+<% end %>
+
+<% if can? :manage, Garment %>
+  <li id='prendas'><%= link_to 'Prendas', :garments, :class=>'colc' %></li>
+<% end %>
+
+<% if can? :manage, ProductionOrder %>
+<li id='produc'><%= link_to 'Estadisticas', :statistics, :class=>'colc' %></li>
+<% end %>
+
+<li id='almacen'><a href="#myModaal" role="button"  data-toggle="modal">Ayuda</a></li>
+<div id="myModaal" class="modal hide fade" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <%= render 'layouts/modal_help' %>       
+</div>

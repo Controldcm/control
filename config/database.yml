@@ -1,0 +1,26 @@
+development:
+ adapter: postgresql
+ encoding: utf8
+ database: control_development
+ pool: 5
+ username: postgres
+ host: localhost
+ port: 5432 
+
+test:
+ adapter: postgresql
+ encoding: utf8
+ database: control_test
+ pool: 5
+ username: postgres
+ host: localhost
+ port: 5432 
+
+production:
+ adapter: postgresql
+ encoding: utf8
+ database: control_production
+ pool: 5
+ username: postgres
+ host: localhost
+ port: 5432 
