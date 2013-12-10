@@ -25,7 +25,7 @@ $(document).ready(function() {
 
 $(function() {
     $('.carousel').carousel({
-	  interval: 100000000000000000000
+	  interval: 5000
 	});
 });    
 

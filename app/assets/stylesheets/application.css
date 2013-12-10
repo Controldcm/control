@@ -11,6 +11,7 @@
  
 #lazybox div.ingreso { max-width: 1000px; color: white;  }
 #lazybox div.productions { max-width: 800px; color: white;  }
+#lazybox div.admin { max-width: 850px; color: white; margin-left: 100px;  }
 #lazybox div.receipt_headers { max-width: 800px;  color: white; }
 #lazybox div.center { max-width: 600px; color: white;  }
 #lazybox div.about { max-width: 600px; color: white; }
@@ -447,7 +448,7 @@ img#efep{
 h1#con{
   margin-left: 100px;
   margin-top: 20px;
-  color: #151515dm;
+  color: #151515d;
   font-size: 60px;
   font-family:  Calibri;
 }
@@ -586,13 +587,23 @@ blockquote#uno{
 
 #primera{
   width: 50%;
+  margin-left: -70px;
 }
 
 #ultima{
-  margin-left: 618px;
-  margin-top: -348px;
+  margin-left: 500px;
+  margin-top: -475px;
   width: 40%;
 }
+
+#cerrar{
+  margin-left: -60px;
+}
+
+td{
+  color: black;
+}
+
 
 
 

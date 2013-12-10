@@ -16,6 +16,5 @@ class Input < ActiveRecord::Base
        else
           scope :all
        end
-   end
-     
+   end    
 end

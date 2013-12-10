@@ -4,7 +4,7 @@ class Client < ActiveRecord::Base
     belongs_to :doc
     attr_accessible :attendant, :cell, :identification, :mail, :name, :phone, :city_id, :doc_id
 
-    attr_accessible :city_name
+    attr_accessible :city_id
 
     # busqueda
     def self.search(name, ident)
@@ -15,13 +15,6 @@ class Client < ActiveRecord::Base
         end
     end
 
-    # para autocomplete
-    def city_name
-        city.name if city
-    end
 
-    def city_name=(name)
-        self.city = City.find_or_create_by_name(name) unless name.blank?
-    end
 
 end

@@ -21,8 +21,6 @@ class User < ActiveRecord::Base
 
     belongs_to :occupation
     belongs_to :center
-    
-    attr_accessible :center_name
                   
     has_attached_file :foto,
                       :styles => { :medium => "300x300>",

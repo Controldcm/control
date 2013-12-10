@@ -38,9 +38,9 @@
                     <div class="control-group">
                         <label class="control-label" for="inputName">Ciudad</label>
                         <div class="controls">
-                             <%= f.autocomplete_field :city_name, autocomplete_city_name_receipt_headers_path, :id_element => '#id' %>
+                            <%= f.association :city, :collection => City.all(:order => 'name'), :label => false %>
                         </div>
-                    </div>
+                    </div>    
                     <div class="control-group">
                         <label class="control-label" for="inputName">Identificacion</label>
                         <div class="controls">

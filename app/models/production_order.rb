@@ -5,4 +5,9 @@ class ProductionOrder < ActiveRecord::Base
   belongs_to :garment
   belongs_to :client
   attr_accessible :client_id, :garment_id, :op, :programed_amount, :programing_date
+
+  def self.search(search)
+  	
+ 	where('op like ?', "%#{search}%") 
+  end
 end

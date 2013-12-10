@@ -1,5 +1,7 @@
 Control::Application.routes.draw do
 
+  resources :roles
+
   resources :entrances
 
 
@@ -12,13 +14,12 @@ Control::Application.routes.draw do
 
 
   get "ingresolo" => "sessions#ingresolo", :as => "ingresolo"
-
-  get "ayuda" => "ayuda#index", :as => "ayuda"
+  get "help" => "pages#help", :as => "help"
   get "video1" => "ayuda#video1", :as => "video1"
 
   resources :receipt_headers do
-      get :autocomplete_city_name, :on => :collection
-      resources :receipt_descriptions
+    get :autocomplete_city_name, :on => :collection
+    resources :receipt_descriptions
   end 
   
   get 'receipt_descriptions/calc', to: 'receipt_descriptions#calc' 
@@ -96,9 +97,8 @@ Control::Application.routes.draw do
 
   
   get  "inventory" => "pages#inventory", :as => "inventory"
-  get  "admin2" => "pages#admin2", :as => "admin2"
   get  "admin" => "pages#admin", :as => "admin"
-  get  "admin3" => "pages#admin3", :as => "admin3"
+
   get "about" => "pages#about", :as => "about"
 
   resources :users do

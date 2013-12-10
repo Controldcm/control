@@ -1,2 +1,3 @@
 $('table tbody').append("<%= escape_javascript(render @purchase) %>")
-$.lazybox.close()
+$.lazybox.close();
+$("#total_p").val("<%= @purchases.count %>");

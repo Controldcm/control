@@ -5,7 +5,7 @@ class ReceiptHeadersController < ApplicationController
  autocomplete :city, :name, :full => true
  
   def index
-    @receipt_headers = ReceiptHeader.paginate(:page => params[:page]).per_page(4)
+    @receipt_headers = ReceiptHeader.paginate(:page => params[:page]).per_page(3)
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @receipt_headers }
@@ -27,7 +27,8 @@ class ReceiptHeadersController < ApplicationController
   def create
       @receipt_header = ReceiptHeader.new(params[:receipt_header])
       @receipt_header.user_id = current_user.id
-      @receipt_header.save
+      render :action => :edit unless @receipt_header.save
+      @receipt_headers = ReceiptHeader.all
   end
 
   def update
@@ -37,7 +38,9 @@ class ReceiptHeadersController < ApplicationController
   end
 
   def destroy
+      ReceiptDescription.where(:receipt_header_id => @receipt_header.id).destroy_all
       @receipt_header.destroy
+      @receipt_headers = ReceiptHeader.all
   end
     
   private

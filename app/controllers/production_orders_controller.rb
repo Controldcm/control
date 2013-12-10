@@ -3,7 +3,7 @@ class ProductionOrdersController < ApplicationController
     before_filter :find_ids
 
     def index
-      @production_orders = ProductionOrder.page(params[:page]).per_page(3)
+      @production_orders = ProductionOrder.search(params[:search]).page(params[:page]).per_page(3)
       respond_to do |format|
         format.html # index.html.erb
         format.json { render json: @production_orders }
@@ -34,6 +34,7 @@ class ProductionOrdersController < ApplicationController
 
     def destroy
         Procedure.where(:production_order_id => @production_order.id).destroy_all
+        PreproductionCost.where(:production_order_id => @production_order.id).destroy_all
         @production_order.destroy
         @production_orders = ProductionOrder.all
     end

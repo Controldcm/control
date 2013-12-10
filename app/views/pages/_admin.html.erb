@@ -1,0 +1,105 @@
+<div class='admin'>
+        <div class="modal-header ">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  <h3 id="myModalLabel">Administración de Tablas Maestras</h3>
+                </div>
+                 <table id='primera'  class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>Maestra</th>
+                          <th>Descripción</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                         <tr>
+                             <td><img src="assets/foto.png", width='25'><%= link_to "Usuarios", users_path %></td>
+                             <td>Usuarios: Administración de los usuarios del Sistema </td>
+                         </tr>
+                         <tr>
+                             <td><img src="assets/foto.png", width='25'><%= link_to "Roles", roles_path %></td>
+                             <td>Roles: Administración de los roles del Sistema </td>
+                         </tr>
+                         <tr>
+                             <td><img src="assets/regionales.png", width='25'><%= link_to "Regionales", regionals_path %></td>
+                             <td>Regionales: Directorios de las regionales del SENA</td>
+                         </tr>
+                         <tr>
+                             <td><img src="assets/trabajo.png", width='25'><%= link_to "Ocupaciones", occupations_path %></td>
+                             <td>Ocupaciones</td>
+                         </tr>
+                         <tr>
+                             <td><img src="assets/centro.png", width='25'><%= link_to "Centros", centers_path %></td>
+                             <td>Centros: Directorios de las regionales del SENA</td>
+                         </tr>
+                         <tr>
+                             <td><img src="assets/identifig.png", width='25'><%= link_to "Tipos Documentos", docs_path %></td>
+                             <td>Tipos Documentos</td>
+                         </tr>
+                         <tr>
+                             <td><img src="assets/paises.png", width='25'><%= link_to "Paises", countries_path %></td>
+                             <td>Paises</td>
+                         </tr>
+                         
+                         <tr>
+                             <td><img src="assets/departamentos.png", width='25'><%= link_to "Departamentos", regions_path %></td>
+                             <td>Departamentos</td>
+                         </tr>
+                        
+                              
+                      </tbody>
+
+                    </table>
+                    <table id='ultima' class="table table-striped">
+               <thead>
+                 <tr>
+                   <th>Maestra</th>
+                   <th>Descripción</th>
+                 </tr>
+               </thead>
+
+               <tbody>
+                 <tr>
+                             <td><img src="assets/ciudad.png", width='25'><%= link_to "Ciudades", cities_path %></td>
+                             <td>Ciudades</td>
+                         </tr>
+                         <tr>
+                             <td><img src="assets/prendas.png", width='25'><%= link_to "Tipos de Prendas", types_path %></td>
+                             <td>Tipos de Prendas</td>
+                         </tr>
+                         <tr>
+                             <td><img src="assets/pren.png", width='25'><%= link_to "Prendas", garments_path %></td>
+                             <td>Prendas</td>
+                         </tr>
+                         <tr>
+                             <td><img src="assets/medida.png", width='25'><%= link_to "Unidades", unities_path %></td>
+                             <td>Unidades</td>
+                         </tr> 
+                <tr>
+                       <td><img src="assets/insumos.png", width='25'><%= link_to "Categoria de Insumos", categories_path %></td>
+                       <td>Categoria de Insumos</td>
+                   </tr>
+                <tr>
+                       <td><img src="assets/insu.jpg", width='25'><%= link_to "Materiales e Insumos", inputs_path %></td>
+                       <td>Materiales e Insumos</td>
+                   </tr>
+                  <tr>
+                      <td><img src="assets/regalo.png", width='25'><%= link_to "Donaciones", donations_path %></td>
+                      <td>Donaciones</td>
+                  </tr>
+
+                  <tr>
+                      <td><img src="assets/produc.png", width='25'><%= link_to "Produccion", productions_path %></td>
+                      <td>Producciones</td>
+                  </tr>
+                  
+               </tbody>
+             </table>
+                    
+                <br><br>
+                <div id='cerrar'  class="modal-footer">
+                  <a href="#" class="btn btn-inverse" onclick="$.lazybox.close()">Cerrar</a>
+                  
+                </div>
+                
+</div>

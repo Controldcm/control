@@ -4,44 +4,127 @@ one:
   embroidery_delivery: MyString
   embroidery_real: MyString
   embroidery_end: MyString
+  embroidery_month: MyString
+  embroidery_attendant: MyString
+  embroidery_amount: 1
   print_delivery: MyString
   print_real: MyString
   print_end: MyString
+  print_attendant: MyString
+  print_amount: 1
   cutting_delivery: MyString
   cutting_real: MyString
   cutting_end: MyString
+  cutting_attendant: MyString
+  cutting_amount: 1
   outline_delivery: MyString
   outline_real: MyString
   outline_end: MyString
+  outline_attendant: MyString
+  outline_amount: 1
   assembly_delivery: MyString
   assembly_real: MyString
   assembly_end: MyString
+  assembly_attendant: MyString
+  assembly_amount: 1
   washing_delivery: MyString
   washing_real: MyString
   washing_end: MyString
+  washing_attendant: MyString
+  washing_amount: 1
   tinte_delivery: MyString
   tinte_real: MyString
   tinte_end: MyString
+  tinte_attendant: MyString
+  tinte_amount: 1
+  condition_id: 1
+  stock_delivery: MyString
+  stock_real: MyString
+  stock_end: MyString
+  stock_attendant: MyString
+  stock_amount: 1
+  stock_month: 1
+  store_delivery: MyString
+  store_real: MyString
+  store_end: MyString
+  store_attendant: MyString
+  store_month: 1
+  store_amount: 1
+  labeled_delivery: MyString
+  labeled_real: MyString
+  labeled_end: MyString
+  labeled_attendant: MyString
+  labeled_month: 1
+  labeled_amount: 1
+  print_delivery: MyString
+  print_real: MyString
+  print_end: MyString
+  print_attendant: MyString
+  print_month: 1
+  print_amount: 1
+  production_order_id: 1
+
 
 two:
   embroidery_delivery: MyString
   embroidery_real: MyString
   embroidery_end: MyString
+  embroidery_month: MyString
+  embroidery_attendant: MyString
+  embroidery_amount: 1
   print_delivery: MyString
   print_real: MyString
   print_end: MyString
+  print_attendant: MyString
+  print_amount: 1
   cutting_delivery: MyString
   cutting_real: MyString
   cutting_end: MyString
+  cutting_attendant: MyString
+  cutting_amount: 1
   outline_delivery: MyString
   outline_real: MyString
   outline_end: MyString
+  outline_attendant: MyString
+  outline_amount: 1
   assembly_delivery: MyString
   assembly_real: MyString
   assembly_end: MyString
+  assembly_attendant: MyString
+  assembly_amount: 1
   washing_delivery: MyString
   washing_real: MyString
   washing_end: MyString
+  washing_attendant: MyString
+  washing_amount: 1
   tinte_delivery: MyString
   tinte_real: MyString
   tinte_end: MyString
+  tinte_attendant: MyString
+  tinte_amount: 1
+  condition_id: 1
+  stock_delivery: MyString
+  stock_real: MyString
+  stock_end: MyString
+  stock_attendant: MyString
+  stock_amount: 1
+  stock_month: 1
+  store_delivery: MyString
+  store_real: MyString
+  store_end: MyString
+  store_attendant: MyString
+  store_month: 1
+  store_amount: 1
+  labeled_delivery: MyString
+  labeled_real: MyString
+  labeled_end: MyString
+  labeled_attendant: MyString
+  labeled_month: 1
+  labeled_amount: 1
+  print_delivery: MyString
+  print_real: MyString
+  print_end: MyString
+  print_attendant: MyString
+  print_month: 1
+  print_amount: 1
+  production_order_id: 1

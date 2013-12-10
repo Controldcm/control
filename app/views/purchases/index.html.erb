@@ -5,7 +5,6 @@
 <table class="table table-striped table-bordered table-condensed">
   <thead>
     <tr>
-      <th>Id</th>
       <th>Proveedor</th>
       <th>Fecha</th>
       <th></th>
@@ -23,5 +22,5 @@
                                 :previous_label => '&laquo; Anterior', 
                                 :next_label => 'Siguiente &raquo;') %>
    </ul>
-   <p id='total' class="pull-right">Total Compras : <%= @purchases.count %></p>
+   <p id='total' class="pull-right">Total Compras : <input type="text" id='total_p' name="total_p" value="<%= @purchases.count %>"></p>
 </div>

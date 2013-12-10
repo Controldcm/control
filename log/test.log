@@ -1,0 +1,1504 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (36.0ms)[0m  [1mALTER TABLE "assignments" DISABLE TRIGGER ALL;ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "centers" DISABLE TRIGGER ALL;ALTER TABLE "cities" DISABLE TRIGGER ALL;ALTER TABLE "clients" DISABLE TRIGGER ALL;ALTER TABLE "conditions" DISABLE TRIGGER ALL;ALTER TABLE "consume_garments" DISABLE TRIGGER ALL;ALTER TABLE "countries" DISABLE TRIGGER ALL;ALTER TABLE "docs" DISABLE TRIGGER ALL;ALTER TABLE "donations" DISABLE TRIGGER ALL;ALTER TABLE "entrances" DISABLE TRIGGER ALL;ALTER TABLE "garments" DISABLE TRIGGER ALL;ALTER TABLE "inputs" DISABLE TRIGGER ALL;ALTER TABLE "occupations" DISABLE TRIGGER ALL;ALTER TABLE "preproduction_costs" DISABLE TRIGGER ALL;ALTER TABLE "procedures" DISABLE TRIGGER ALL;ALTER TABLE "production_orders" DISABLE TRIGGER ALL;ALTER TABLE "productions" DISABLE TRIGGER ALL;ALTER TABLE "products" DISABLE TRIGGER ALL;ALTER TABLE "purchase_descriptions" DISABLE TRIGGER ALL;ALTER TABLE "purchases" DISABLE TRIGGER ALL;ALTER TABLE "receipt_descriptions" DISABLE TRIGGER ALL;ALTER TABLE "receipt_headers" DISABLE TRIGGER ALL;ALTER TABLE "regionals" DISABLE TRIGGER ALL;ALTER TABLE "regions" DISABLE TRIGGER ALL;ALTER TABLE "roles" DISABLE TRIGGER ALL;ALTER TABLE "sessions" DISABLE TRIGGER ALL;ALTER TABLE "states" DISABLE TRIGGER ALL;ALTER TABLE "suppliers" DISABLE TRIGGER ALL;ALTER TABLE "types" DISABLE TRIGGER ALL;ALTER TABLE "unities" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mFixture Delete (2.1ms)[0m  [1mDELETE FROM "purchases"[0m
+  [1m[35mFixture Insert (2.5ms)[0m  INSERT INTO "purchases" ("supplier_id", "date", "created_at", "updated_at", "id") VALUES (1, 'MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 980190962)
+  [1m[36mFixture Insert (1.5ms)[0m  [1mINSERT INTO "purchases" ("supplier_id", "date", "created_at", "updated_at", "id") VALUES (1, 'MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 298486374)[0m
+  [1m[35mFixture Delete (2.1ms)[0m  DELETE FROM "categories"
+  [1m[36mFixture Insert (2.3ms)[0m  [1mINSERT INTO "categories" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 980190962)[0m
+  [1m[35mFixture Insert (1.7ms)[0m  INSERT INTO "categories" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 298486374)
+  [1m[36mFixture Delete (1.3ms)[0m  [1mDELETE FROM "garments"[0m
+  [1m[35mFixture Insert (1.3ms)[0m  INSERT INTO "garments" ("name", "reference", "code", "gender", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'f', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 980190962)
+  [1m[36mFixture Insert (1.0ms)[0m  [1mINSERT INTO "garments" ("name", "reference", "code", "gender", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'f', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 298486374)[0m
+  [1m[35mFixture Delete (1.2ms)[0m  DELETE FROM "productions"
+  [1m[36mFixture Insert (1.6ms)[0m  [1mINSERT INTO "productions" ("garment_id", "date_in", "amount_in", "date_out", "amount_out", "remaining", "a_amount", "b_amount", "user_id", "preparation_days", "created_at", "updated_at", "id") VALUES (1, 'MyString', 1, 'MyString', 1, 1, 1, 1, 1, 1, '2013-12-04 19:04:50', '2013-12-04 19:04:50', 980190962)[0m
+  [1m[35mFixture Insert (0.9ms)[0m  INSERT INTO "productions" ("garment_id", "date_in", "amount_in", "date_out", "amount_out", "remaining", "a_amount", "b_amount", "user_id", "preparation_days", "created_at", "updated_at", "id") VALUES (1, 'MyString', 1, 'MyString', 1, 1, 1, 1, 1, 1, '2013-12-04 19:04:50', '2013-12-04 19:04:50', 298486374)
+  [1m[36mFixture Delete (1.4ms)[0m  [1mDELETE FROM "receipt_headers"[0m
+  [1m[35mFixture Insert (1.5ms)[0m  INSERT INTO "receipt_headers" ("client", "adress", "city_id", "identification", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 1, 'MyString', 'MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 980190962)
+  [1m[36mFixture Insert (1.3ms)[0m  [1mINSERT INTO "receipt_headers" ("client", "adress", "city_id", "identification", "phone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 1, 'MyString', 'MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 298486374)[0m
+  [1m[35mFixture Delete (2.0ms)[0m  DELETE FROM "assignments"
+  [1m[36mFixture Insert (2.3ms)[0m  [1mINSERT INTO "assignments" ("created_at", "updated_at", "id") VALUES ('2013-12-04 19:04:50', '2013-12-04 19:04:50', 980190962)[0m
+  [1m[35mFixture Insert (1.8ms)[0m  INSERT INTO "assignments" ("created_at", "updated_at", "id") VALUES ('2013-12-04 19:04:50', '2013-12-04 19:04:50', 298486374)
+  [1m[36mFixture Delete (2.2ms)[0m  [1mDELETE FROM "purchase_descriptions"[0m
+  [1m[35mFixture Insert (24.9ms)[0m  INSERT INTO "purchase_descriptions" ("purchase_id", "input_id", "amount", "total_value", "created_at", "updated_at", "id") VALUES (1, 1, 1, 1.5, '2013-12-04 19:04:50', '2013-12-04 19:04:50', 980190962)
+  [1m[36mFixture Insert (1.8ms)[0m  [1mINSERT INTO "purchase_descriptions" ("purchase_id", "input_id", "amount", "total_value", "created_at", "updated_at", "id") VALUES (1, 1, 1, 1.5, '2013-12-04 19:04:50', '2013-12-04 19:04:50', 298486374)[0m
+  [1m[35mFixture Delete (4.0ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (1.1ms)[0m  [1mINSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2013-12-04 19:04:50', '2013-12-04 19:04:50', 980190962)[0m
+  [1m[35mFixture Insert (0.8ms)[0m  INSERT INTO "users" ("created_at", "updated_at", "id") VALUES ('2013-12-04 19:04:50', '2013-12-04 19:04:50', 298486374)
+  [1m[36mFixture Delete (1.5ms)[0m  [1mDELETE FROM "conditions"[0m
+  [1m[35mFixture Insert (1.1ms)[0m  INSERT INTO "conditions" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 980190962)
+  [1m[36mFixture Insert (0.8ms)[0m  [1mINSERT INTO "conditions" ("name", "description", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 298486374)[0m
+  [1m[35mFixture Delete (1.1ms)[0m  DELETE FROM "regionals"
+  [1m[36mFixture Insert (1.1ms)[0m  [1mINSERT INTO "regionals" ("name", "director", "phone", "ip", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 980190962)[0m
+  [1m[35mFixture Insert (0.9ms)[0m  INSERT INTO "regionals" ("name", "director", "phone", "ip", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 298486374)
+  [1m[36mFixture Delete (1.4ms)[0m  [1mDELETE FROM "docs"[0m
+  [1m[35mFixture Insert (1.3ms)[0m  INSERT INTO "docs" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 980190962)
+  [1m[36mFixture Insert (1.2ms)[0m  [1mINSERT INTO "docs" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 298486374)[0m
+  [1m[35mFixture Delete (1.7ms)[0m  DELETE FROM "occupations"
+  [1m[36mFixture Insert (1.5ms)[0m  [1mINSERT INTO "occupations" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 980190962)[0m
+  [1m[35mFixture Insert (1.0ms)[0m  INSERT INTO "occupations" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 298486374)
+  [1m[36mFixture Delete (1.4ms)[0m  [1mDELETE FROM "inputs"[0m
+  [1m[35mFixture Insert (2.3ms)[0m  INSERT INTO "inputs" ("name", "description", "unit_cost", "meter_cost", "total_cost", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 1.5, 1.5, 1.5, '2013-12-04 19:04:50', '2013-12-04 19:04:50', 980190962)
+  [1m[36mFixture Insert (1.6ms)[0m  [1mINSERT INTO "inputs" ("name", "description", "unit_cost", "meter_cost", "total_cost", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 1.5, 1.5, 1.5, '2013-12-04 19:04:50', '2013-12-04 19:04:50', 298486374)[0m
+  [1m[35mFixture Delete (1.7ms)[0m  DELETE FROM "centers"
+  [1m[36mFixture Insert (1.8ms)[0m  [1mINSERT INTO "centers" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 980190962)[0m
+  [1m[35mFixture Insert (1.9ms)[0m  INSERT INTO "centers" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 298486374)
+  [1m[36mFixture Delete (1.3ms)[0m  [1mDELETE FROM "unities"[0m
+  [1m[35mFixture Insert (1.3ms)[0m  INSERT INTO "unities" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 980190962)
+  [1m[36mFixture Insert (0.8ms)[0m  [1mINSERT INTO "unities" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 298486374)[0m
+  [1m[35mFixture Delete (1.2ms)[0m  DELETE FROM "entrances"
+  [1m[36mFixture Insert (1.3ms)[0m  [1mINSERT INTO "entrances" ("input_id", "amount", "created_at", "updated_at", "id") VALUES (1, 1, '2013-12-04 19:04:50', '2013-12-04 19:04:50', 980190962)[0m
+  [1m[35mFixture Insert (1.3ms)[0m  INSERT INTO "entrances" ("input_id", "amount", "created_at", "updated_at", "id") VALUES (1, 1, '2013-12-04 19:04:50', '2013-12-04 19:04:50', 298486374)
+  [1m[36mFixture Delete (4.1ms)[0m  [1mDELETE FROM "procedures"[0m
+  [1m[35mFixture Insert (2.1ms)[0m  INSERT INTO "procedures" ("embroidery_delivery", "embroidery_real", "embroidery_end", "embroidery_month", "embroidery_attendant", "embroidery_amount", "print_delivery", "print_real", "print_end", "print_attendant", "print_amount", "cutting_delivery", "cutting_real", "cutting_end", "cutting_attendant", "cutting_amount", "outline_delivery", "outline_real", "outline_end", "outline_attendant", "outline_amount", "assembly_delivery", "assembly_real", "assembly_end", "assembly_attendant", "assembly_amount", "washing_delivery", "washing_real", "washing_end", "washing_attendant", "washing_amount", "tinte_delivery", "tinte_real", "tinte_end", "tinte_attendant", "tinte_amount", "condition_id", "stock_delivery", "stock_real", "stock_end", "stock_attendant", "stock_amount", "stock_month", "store_delivery", "store_real", "store_end", "store_attendant", "store_month", "store_amount", "labeled_delivery", "labeled_real", "labeled_end", "labeled_attendant", "labeled_month", "labeled_amount", "print_month", "production_order_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 0, 'MyString', 1, 'MyString', 'MyString', 'MyString', 'MyString', 1, 'MyString', 'MyString', 'MyString', 'MyString', 1, 'MyString', 'MyString', 'MyString', 'MyString', 1, 'MyString', 'MyString', 'MyString', 'MyString', 1, 'MyString', 'MyString', 'MyString', 'MyString', 1, 'MyString', 'MyString', 'MyString', 'MyString', 1, 1, 'MyString', 'MyString', 'MyString', 'MyString', 1, 1, 'MyString', 'MyString', 'MyString', 'MyString', 1, 1, 'MyString', 'MyString', 'MyString', 'MyString', 1, 1, 1, 1, '2013-12-04 19:04:50', '2013-12-04 19:04:50', 980190962)
+  [1m[36mFixture Insert (1.9ms)[0m  [1mINSERT INTO "procedures" ("embroidery_delivery", "embroidery_real", "embroidery_end", "embroidery_month", "embroidery_attendant", "embroidery_amount", "print_delivery", "print_real", "print_end", "print_attendant", "print_amount", "cutting_delivery", "cutting_real", "cutting_end", "cutting_attendant", "cutting_amount", "outline_delivery", "outline_real", "outline_end", "outline_attendant", "outline_amount", "assembly_delivery", "assembly_real", "assembly_end", "assembly_attendant", "assembly_amount", "washing_delivery", "washing_real", "washing_end", "washing_attendant", "washing_amount", "tinte_delivery", "tinte_real", "tinte_end", "tinte_attendant", "tinte_amount", "condition_id", "stock_delivery", "stock_real", "stock_end", "stock_attendant", "stock_amount", "stock_month", "store_delivery", "store_real", "store_end", "store_attendant", "store_month", "store_amount", "labeled_delivery", "labeled_real", "labeled_end", "labeled_attendant", "labeled_month", "labeled_amount", "print_month", "production_order_id", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 0, 'MyString', 1, 'MyString', 'MyString', 'MyString', 'MyString', 1, 'MyString', 'MyString', 'MyString', 'MyString', 1, 'MyString', 'MyString', 'MyString', 'MyString', 1, 'MyString', 'MyString', 'MyString', 'MyString', 1, 'MyString', 'MyString', 'MyString', 'MyString', 1, 'MyString', 'MyString', 'MyString', 'MyString', 1, 1, 'MyString', 'MyString', 'MyString', 'MyString', 1, 1, 'MyString', 'MyString', 'MyString', 'MyString', 1, 1, 'MyString', 'MyString', 'MyString', 'MyString', 1, 1, 1, 1, '2013-12-04 19:04:50', '2013-12-04 19:04:50', 298486374)[0m
+  [1m[35mFixture Delete (1.7ms)[0m  DELETE FROM "countries"
+  [1m[36mFixture Insert (1.9ms)[0m  [1mINSERT INTO "countries" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 980190962)[0m
+  [1m[35mFixture Insert (1.5ms)[0m  INSERT INTO "countries" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 298486374)
+  [1m[36mFixture Delete (3.1ms)[0m  [1mDELETE FROM "clients"[0m
+  [1m[35mFixture Insert (3.6ms)[0m  INSERT INTO "clients" ("identification", "name", "attendant", "mail", "phone", "cell", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 980190962)
+  [1m[36mFixture Insert (2.8ms)[0m  [1mINSERT INTO "clients" ("identification", "name", "attendant", "mail", "phone", "cell", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 298486374)[0m
+  [1m[35mFixture Delete (1.1ms)[0m  DELETE FROM "receipt_descriptions"
+  [1m[36mFixture Insert (1.3ms)[0m  [1mINSERT INTO "receipt_descriptions" ("amount", "garment_id", "receipt_header_id", "unity_value", "total_value", "created_at", "updated_at", "id") VALUES (1, 1, 1, 1.5, 1.5, '2013-12-04 19:04:50', '2013-12-04 19:04:50', 980190962)[0m
+  [1m[35mFixture Insert (1.0ms)[0m  INSERT INTO "receipt_descriptions" ("amount", "garment_id", "receipt_header_id", "unity_value", "total_value", "created_at", "updated_at", "id") VALUES (1, 1, 1, 1.5, 1.5, '2013-12-04 19:04:50', '2013-12-04 19:04:50', 298486374)
+  [1m[36mFixture Delete (1.7ms)[0m  [1mDELETE FROM "suppliers"[0m
+  [1m[35mFixture Insert (1.3ms)[0m  INSERT INTO "suppliers" ("doc_id", "identification", "social_reason", "responsible", "ocupation", "adress", "phone", "cell", "city_id", "created_at", "updated_at", "id") VALUES (1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2013-12-04 19:04:50', '2013-12-04 19:04:50', 980190962)
+  [1m[36mFixture Insert (1.0ms)[0m  [1mINSERT INTO "suppliers" ("doc_id", "identification", "social_reason", "responsible", "ocupation", "adress", "phone", "cell", "city_id", "created_at", "updated_at", "id") VALUES (1, 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 'MyString', 1, '2013-12-04 19:04:50', '2013-12-04 19:04:50', 298486374)[0m
+  [1m[35mFixture Delete (1.0ms)[0m  DELETE FROM "types"
+  [1m[36mFixture Insert (1.1ms)[0m  [1mINSERT INTO "types" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 980190962)[0m
+  [1m[35mFixture Insert (0.8ms)[0m  INSERT INTO "types" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 298486374)
+  [1m[36mFixture Delete (2.3ms)[0m  [1mDELETE FROM "consume_garments"[0m
+  [1m[35mFixture Insert (2.7ms)[0m  INSERT INTO "consume_garments" ("cost", "quantity_consume", "created_at", "updated_at", "id") VALUES (1.5, 1.5, '2013-12-04 19:04:50', '2013-12-04 19:04:50', 980190962)
+  [1m[36mFixture Insert (1.6ms)[0m  [1mINSERT INTO "consume_garments" ("cost", "quantity_consume", "created_at", "updated_at", "id") VALUES (1.5, 1.5, '2013-12-04 19:04:50', '2013-12-04 19:04:50', 298486374)[0m
+  [1m[35mFixture Delete (2.7ms)[0m  DELETE FROM "cities"
+  [1m[36mFixture Insert (2.8ms)[0m  [1mINSERT INTO "cities" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 980190962)[0m
+  [1m[35mFixture Insert (1.8ms)[0m  INSERT INTO "cities" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 298486374)
+  [1m[36mFixture Delete (1.1ms)[0m  [1mDELETE FROM "states"[0m
+  [1m[35mFixture Insert (1.1ms)[0m  INSERT INTO "states" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 980190962)
+  [1m[36mFixture Insert (0.8ms)[0m  [1mINSERT INTO "states" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2013-12-04 19:04:50', '2013-12-04 19:04:50', 298486374)[0m
+  [1m[35mFixture Delete (1.2ms)[0m  DELETE FROM "donations"
+  [1m[36mFixture Insert (1.2ms)[0m  [1mINSERT INTO "donations" ("user_id", "garment_id", "amount", "description", "date", "justification", "receiver", "created_at", "updated_at", "id") VALUES (1, 1, 1, 'MyString', 'MyString', 'MyString', 1, '2013-12-04 19:04:51', '2013-12-04 19:04:51', 980190962)[0m
+  [1m[35mFixture Insert (0.9ms)[0m  INSERT INTO "donations" ("user_id", "garment_id", "amount", "description", "date", "justification", "receiver", "created_at", "updated_at", "id") VALUES (1, 1, 1, 'MyString', 'MyString', 'MyString', 1, '2013-12-04 19:04:51', '2013-12-04 19:04:51', 298486374)
+  [1m[36mFixture Delete (1.5ms)[0m  [1mDELETE FROM "roles"[0m
+  [1m[35mFixture Insert (1.6ms)[0m  INSERT INTO "roles" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2013-12-04 19:04:51', '2013-12-04 19:04:51', 980190962)
+  [1m[36mFixture Insert (1.6ms)[0m  [1mINSERT INTO "roles" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2013-12-04 19:04:51', '2013-12-04 19:04:51', 298486374)[0m
+  [1m[35mFixture Delete (2.9ms)[0m  DELETE FROM "production_orders"
+  [1m[36mFixture Insert (2.4ms)[0m  [1mINSERT INTO "production_orders" ("programing_date", "client_id", "op", "garment_id", "programed_amount", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 1, 1, '2013-12-04 19:04:51', '2013-12-04 19:04:51', 980190962)[0m
+  [1m[35mFixture Insert (1.8ms)[0m  INSERT INTO "production_orders" ("programing_date", "client_id", "op", "garment_id", "programed_amount", "created_at", "updated_at", "id") VALUES ('MyString', 1, 1, 1, 1, '2013-12-04 19:04:51', '2013-12-04 19:04:51', 298486374)
+  [1m[36mFixture Delete (1.1ms)[0m  [1mDELETE FROM "preproduction_costs"[0m
+  [1m[35mFixture Insert (1.2ms)[0m  INSERT INTO "preproduction_costs" ("plotting", "perforated_paper", "plastic", "labeling", "printing", "production_order_id", "cost", "created_at", "updated_at", "id") VALUES (1.5, 1.5, 1.5, 1.5, 1.5, 1, 1.5, '2013-12-04 19:04:51', '2013-12-04 19:04:51', 980190962)
+  [1m[36mFixture Insert (0.9ms)[0m  [1mINSERT INTO "preproduction_costs" ("plotting", "perforated_paper", "plastic", "labeling", "printing", "production_order_id", "cost", "created_at", "updated_at", "id") VALUES (1.5, 1.5, 1.5, 1.5, 1.5, 1, 1.5, '2013-12-04 19:04:51', '2013-12-04 19:04:51', 298486374)[0m
+  [1m[35mFixture Delete (1.7ms)[0m  DELETE FROM "regions"
+  [1m[36mFixture Insert (2.0ms)[0m  [1mINSERT INTO "regions" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2013-12-04 19:04:51', '2013-12-04 19:04:51', 980190962)[0m
+  [1m[35mFixture Insert (1.6ms)[0m  INSERT INTO "regions" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2013-12-04 19:04:51', '2013-12-04 19:04:51', 298486374)
+  [1m[36m (18.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (8.3ms)[0m  ALTER TABLE "assignments" ENABLE TRIGGER ALL;ALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "centers" ENABLE TRIGGER ALL;ALTER TABLE "cities" ENABLE TRIGGER ALL;ALTER TABLE "clients" ENABLE TRIGGER ALL;ALTER TABLE "conditions" ENABLE TRIGGER ALL;ALTER TABLE "consume_garments" ENABLE TRIGGER ALL;ALTER TABLE "countries" ENABLE TRIGGER ALL;ALTER TABLE "docs" ENABLE TRIGGER ALL;ALTER TABLE "donations" ENABLE TRIGGER ALL;ALTER TABLE "entrances" ENABLE TRIGGER ALL;ALTER TABLE "garments" ENABLE TRIGGER ALL;ALTER TABLE "inputs" ENABLE TRIGGER ALL;ALTER TABLE "occupations" ENABLE TRIGGER ALL;ALTER TABLE "preproduction_costs" ENABLE TRIGGER ALL;ALTER TABLE "procedures" ENABLE TRIGGER ALL;ALTER TABLE "production_orders" ENABLE TRIGGER ALL;ALTER TABLE "productions" ENABLE TRIGGER ALL;ALTER TABLE "products" ENABLE TRIGGER ALL;ALTER TABLE "purchase_descriptions" ENABLE TRIGGER ALL;ALTER TABLE "purchases" ENABLE TRIGGER ALL;ALTER TABLE "receipt_descriptions" ENABLE TRIGGER ALL;ALTER TABLE "receipt_headers" ENABLE TRIGGER ALL;ALTER TABLE "regionals" ENABLE TRIGGER ALL;ALTER TABLE "regions" ENABLE TRIGGER ALL;ALTER TABLE "roles" ENABLE TRIGGER ALL;ALTER TABLE "sessions" ENABLE TRIGGER ALL;ALTER TABLE "states" ENABLE TRIGGER ALL;ALTER TABLE "suppliers" ENABLE TRIGGER ALL;ALTER TABLE "types" ENABLE TRIGGER ALL;ALTER TABLE "unities" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mCategory Load (2.9ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "categories" [0m
+Processing by CategoriesController#create as HTML
+  Parameters: {"category"=>{"description"=>"MyString", "name"=>"MyString"}}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "categories" 
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "categories" 
+Processing by CategoriesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (1.1ms)[0m  [1mSELECT COUNT(*) FROM "categories" [0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mCategory Load (1.4ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mCategory Load (1.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by CategoriesController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mCategory Load (1.3ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by CategoriesController#new as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mCategory Load (1.1ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mCategory Load (0.9ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by CategoriesController#update as HTML
+  Parameters: {"category"=>{"description"=>"MyString", "name"=>"MyString"}, "id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mCenter Load (1.9ms)[0m  [1mSELECT "centers".* FROM "centers" WHERE "centers"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "centers" 
+Processing by CentersController#create as HTML
+  Parameters: {"center"=>{"id"=>"980190962", "name"=>"MyString", "regional_id"=>nil, "status"=>nil, "created_at"=>"2013-12-04 19:04:50 UTC", "updated_at"=>"2013-12-04 19:04:50 UTC"}}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (1.8ms)[0m  [1mSELECT COUNT(*) FROM "centers" [0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mCenter Load (1.9ms)[0m  SELECT "centers".* FROM "centers" WHERE "centers"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM "centers" [0m
+Processing by CentersController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "centers" 
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mCenter Load (1.3ms)[0m  [1mSELECT "centers".* FROM "centers" WHERE "centers"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by CentersController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mCenter Load (1.2ms)[0m  SELECT "centers".* FROM "centers" WHERE "centers"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by CentersController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mCenter Load (1.2ms)[0m  [1mSELECT "centers".* FROM "centers" WHERE "centers"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by CentersController#new as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mCenter Load (1.2ms)[0m  SELECT "centers".* FROM "centers" WHERE "centers"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by CentersController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mCenter Load (0.9ms)[0m  [1mSELECT "centers".* FROM "centers" WHERE "centers"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by CentersController#update as HTML
+  Parameters: {"center"=>{"id"=>"980190962", "name"=>"MyString", "regional_id"=>nil, "status"=>nil, "created_at"=>"2013-12-04 19:04:50 UTC", "updated_at"=>"2013-12-04 19:04:50 UTC"}, "id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mCity Load (2.0ms)[0m  SELECT "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (1.3ms)[0m  [1mSELECT COUNT(*) FROM "cities" [0m
+Processing by CitiesController#create as HTML
+  Parameters: {"city"=>{"name"=>"MyString"}}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "cities" 
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mCity Load (1.2ms)[0m  [1mSELECT "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "cities" 
+Processing by CitiesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "cities" [0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mCity Load (1.3ms)[0m  SELECT "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by CitiesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mCity Load (1.7ms)[0m  [1mSELECT "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by CitiesController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.7ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mCity Load (1.1ms)[0m  SELECT "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by CitiesController#new as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mCity Load (1.2ms)[0m  [1mSELECT "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mCity Load (0.9ms)[0m  SELECT "cities".* FROM "cities" WHERE "cities"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by CitiesController#update as HTML
+  Parameters: {"city"=>{"name"=>"MyString"}, "id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mClient Load (2.3ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM "clients" 
+Processing by ClientsController#create as HTML
+  Parameters: {"client"=>{"attendant"=>"MyString", "cell"=>"MyString", "identification"=>"MyString", "mail"=>"MyString", "name"=>"MyString", "phone"=>"MyString"}}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (1.1ms)[0m  [1mSELECT COUNT(*) FROM "clients" [0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mClient Load (2.5ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (1.3ms)[0m  [1mSELECT COUNT(*) FROM "clients" [0m
+Processing by ClientsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM "clients" 
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mClient Load (1.3ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by ClientsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mClient Load (1.4ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by ClientsController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mClient Load (1.3ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by ClientsController#new as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mClient Load (1.4ms)[0m  SELECT "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mClient Load (1.0ms)[0m  [1mSELECT "clients".* FROM "clients" WHERE "clients"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by ClientsController#update as HTML
+  Parameters: {"client"=>{"attendant"=>"MyString", "cell"=>"MyString", "identification"=>"MyString", "mail"=>"MyString", "name"=>"MyString", "phone"=>"MyString"}, "id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mCondition Load (2.0ms)[0m  SELECT "conditions".* FROM "conditions" WHERE "conditions"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (1.1ms)[0m  [1mSELECT COUNT(*) FROM "conditions" [0m
+Processing by ConditionsController#create as HTML
+  Parameters: {"condition"=>{"description"=>"MyString", "name"=>"MyString"}}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "conditions" 
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mCondition Load (1.3ms)[0m  [1mSELECT "conditions".* FROM "conditions" WHERE "conditions"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "conditions" 
+Processing by ConditionsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "conditions" [0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mCondition Load (1.2ms)[0m  SELECT "conditions".* FROM "conditions" WHERE "conditions"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by ConditionsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mCondition Load (1.2ms)[0m  [1mSELECT "conditions".* FROM "conditions" WHERE "conditions"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by ConditionsController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mCondition Load (1.3ms)[0m  SELECT "conditions".* FROM "conditions" WHERE "conditions"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by ConditionsController#new as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mCondition Load (1.2ms)[0m  [1mSELECT "conditions".* FROM "conditions" WHERE "conditions"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by ConditionsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mCondition Load (0.9ms)[0m  SELECT "conditions".* FROM "conditions" WHERE "conditions"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by ConditionsController#update as HTML
+  Parameters: {"condition"=>{"description"=>"MyString", "name"=>"MyString"}, "id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mConsumeGarment Load (24.1ms)[0m  [1mSELECT "consume_garments".* FROM "consume_garments" WHERE "consume_garments"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (1.2ms)[0m  SELECT COUNT(*) FROM "consume_garments" 
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mConsumeGarment Load (1.8ms)[0m  [1mSELECT "consume_garments".* FROM "consume_garments" WHERE "consume_garments"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (1.2ms)[0m  SELECT COUNT(*) FROM "consume_garments" 
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mConsumeGarment Load (1.4ms)[0m  [1mSELECT "consume_garments".* FROM "consume_garments" WHERE "consume_garments"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mConsumeGarment Load (1.3ms)[0m  SELECT "consume_garments".* FROM "consume_garments" WHERE "consume_garments"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mConsumeGarment Load (1.2ms)[0m  [1mSELECT "consume_garments".* FROM "consume_garments" WHERE "consume_garments"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (3.7ms)[0m  [1mBEGIN[0m
+  [1m[35mConsumeGarment Load (1.4ms)[0m  SELECT "consume_garments".* FROM "consume_garments" WHERE "consume_garments"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mConsumeGarment Load (0.9ms)[0m  [1mSELECT "consume_garments".* FROM "consume_garments" WHERE "consume_garments"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.7ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mCountry Load (1.8ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "countries" [0m
+Processing by CountriesController#create as HTML
+  Parameters: {"country"=>{"name"=>"MyString"}}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM "countries" 
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mCountry Load (1.2ms)[0m  [1mSELECT "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (1.2ms)[0m  SELECT COUNT(*) FROM "countries" 
+Processing by CountriesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "countries" [0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mCountry Load (1.1ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by CountriesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mCountry Load (1.2ms)[0m  [1mSELECT "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by CountriesController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mCountry Load (1.1ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by CountriesController#new as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mCountry Load (1.1ms)[0m  [1mSELECT "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by CountriesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mCountry Load (0.9ms)[0m  SELECT "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by CountriesController#update as HTML
+  Parameters: {"country"=>{"name"=>"MyString"}, "id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mDoc Load (2.5ms)[0m  [1mSELECT "docs".* FROM "docs" WHERE "docs"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (1.8ms)[0m  SELECT COUNT(*) FROM "docs" 
+Processing by DocsController#create as HTML
+  Parameters: {"doc"=>{"name"=>"MyString"}}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+  [1m[36m (2.6ms)[0m  [1mSELECT COUNT(*) FROM "docs" [0m
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mDoc Load (1.4ms)[0m  SELECT "docs".* FROM "docs" WHERE "docs"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (1.1ms)[0m  [1mSELECT COUNT(*) FROM "docs" [0m
+Processing by DocsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM "docs" 
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mDoc Load (1.4ms)[0m  [1mSELECT "docs".* FROM "docs" WHERE "docs"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by DocsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mDoc Load (1.4ms)[0m  SELECT "docs".* FROM "docs" WHERE "docs"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by DocsController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mDoc Load (1.5ms)[0m  [1mSELECT "docs".* FROM "docs" WHERE "docs"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by DocsController#new as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mDoc Load (1.4ms)[0m  SELECT "docs".* FROM "docs" WHERE "docs"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by DocsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mDoc Load (0.9ms)[0m  [1mSELECT "docs".* FROM "docs" WHERE "docs"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by DocsController#update as HTML
+  Parameters: {"doc"=>{"name"=>"MyString"}, "id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mDonation Load (2.2ms)[0m  SELECT "donations".* FROM "donations" WHERE "donations"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "donations" [0m
+Processing by DonationsController#create as HTML
+  Parameters: {"donation"=>{"amount"=>"1", "date"=>"MyString", "description"=>"MyString", "garment_id"=>"1", "justification"=>"MyString", "receiver"=>"1", "user_id"=>"1"}}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "donations" 
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mDonation Load (1.3ms)[0m  [1mSELECT "donations".* FROM "donations" WHERE "donations"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "donations" 
+Processing by DonationsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "donations" [0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mDonation Load (1.2ms)[0m  SELECT "donations".* FROM "donations" WHERE "donations"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by DonationsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mDonation Load (1.2ms)[0m  [1mSELECT "donations".* FROM "donations" WHERE "donations"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by DonationsController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mDonation Load (1.3ms)[0m  SELECT "donations".* FROM "donations" WHERE "donations"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by DonationsController#new as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mDonation Load (1.3ms)[0m  [1mSELECT "donations".* FROM "donations" WHERE "donations"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by DonationsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mDonation Load (1.2ms)[0m  SELECT "donations".* FROM "donations" WHERE "donations"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by DonationsController#update as HTML
+  Parameters: {"donation"=>{"amount"=>"1", "date"=>"MyString", "description"=>"MyString", "garment_id"=>"1", "justification"=>"MyString", "receiver"=>"1", "user_id"=>"1"}, "id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mEntrance Load (1.9ms)[0m  [1mSELECT "entrances".* FROM "entrances" WHERE "entrances"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "entrances" 
+Processing by EntrancesController#create as HTML
+  Parameters: {"entrance"=>{"amount"=>"1", "input_id"=>"1"}}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "entrances" [0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mEntrance Load (1.4ms)[0m  SELECT "entrances".* FROM "entrances" WHERE "entrances"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "entrances" [0m
+Processing by EntrancesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "entrances" 
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mEntrance Load (1.1ms)[0m  [1mSELECT "entrances".* FROM "entrances" WHERE "entrances"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by EntrancesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mEntrance Load (1.1ms)[0m  SELECT "entrances".* FROM "entrances" WHERE "entrances"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by EntrancesController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mEntrance Load (1.2ms)[0m  [1mSELECT "entrances".* FROM "entrances" WHERE "entrances"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by EntrancesController#new as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mEntrance Load (1.2ms)[0m  SELECT "entrances".* FROM "entrances" WHERE "entrances"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by EntrancesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mEntrance Load (0.9ms)[0m  [1mSELECT "entrances".* FROM "entrances" WHERE "entrances"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by EntrancesController#update as HTML
+  Parameters: {"entrance"=>{"amount"=>"1", "input_id"=>"1"}, "id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mGarment Load (2.1ms)[0m  SELECT "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "garments" [0m
+Processing by GarmentsController#create as HTML
+  Parameters: {"garment"=>{"code"=>"MyString", "gender"=>"f", "name"=>"MyString", "reference"=>"MyString"}}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (1.2ms)[0m  SELECT COUNT(*) FROM "garments" 
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mGarment Load (2.6ms)[0m  [1mSELECT "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (1.5ms)[0m  SELECT COUNT(*) FROM "garments" 
+Processing by GarmentsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "garments" [0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mGarment Load (1.7ms)[0m  SELECT "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by GarmentsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mGarment Load (1.3ms)[0m  [1mSELECT "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by GarmentsController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mGarment Load (1.3ms)[0m  SELECT "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by GarmentsController#new as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mGarment Load (1.3ms)[0m  [1mSELECT "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mGarment Load (0.9ms)[0m  SELECT "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by GarmentsController#update as HTML
+  Parameters: {"garment"=>{"code"=>"MyString", "gender"=>"f", "name"=>"MyString", "reference"=>"MyString"}, "id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mInput Load (2.2ms)[0m  [1mSELECT "inputs".* FROM "inputs" WHERE "inputs"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (1.2ms)[0m  SELECT COUNT(*) FROM "inputs" 
+Processing by InputsController#create as HTML
+  Parameters: {"input"=>{"description"=>"MyString", "meter_cost"=>"1.5", "name"=>"MyString", "total_cost"=>"1.5", "unit_cost"=>"1.5"}}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "inputs" [0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mInput Load (1.4ms)[0m  SELECT "inputs".* FROM "inputs" WHERE "inputs"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (1.5ms)[0m  [1mSELECT COUNT(*) FROM "inputs" [0m
+Processing by InputsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "inputs" 
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mInput Load (1.2ms)[0m  [1mSELECT "inputs".* FROM "inputs" WHERE "inputs"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by InputsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mInput Load (1.3ms)[0m  SELECT "inputs".* FROM "inputs" WHERE "inputs"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by InputsController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mInput Load (1.5ms)[0m  [1mSELECT "inputs".* FROM "inputs" WHERE "inputs"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by InputsController#new as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mInput Load (1.3ms)[0m  SELECT "inputs".* FROM "inputs" WHERE "inputs"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by InputsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mInput Load (1.0ms)[0m  [1mSELECT "inputs".* FROM "inputs" WHERE "inputs"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by InputsController#update as HTML
+  Parameters: {"input"=>{"description"=>"MyString", "meter_cost"=>"1.5", "name"=>"MyString", "total_cost"=>"1.5", "unit_cost"=>"1.5"}, "id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mOccupation Load (2.0ms)[0m  SELECT "occupations".* FROM "occupations" WHERE "occupations"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "occupations" [0m
+Processing by OccupationsController#create as HTML
+  Parameters: {"occupation"=>{"id"=>"980190962", "name"=>"MyString", "created_at"=>"2013-12-04 19:04:50 UTC", "updated_at"=>"2013-12-04 19:04:50 UTC"}}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "occupations" 
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mOccupation Load (1.4ms)[0m  [1mSELECT "occupations".* FROM "occupations" WHERE "occupations"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "occupations" 
+Processing by OccupationsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "occupations" [0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mOccupation Load (1.1ms)[0m  SELECT "occupations".* FROM "occupations" WHERE "occupations"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by OccupationsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mOccupation Load (1.1ms)[0m  [1mSELECT "occupations".* FROM "occupations" WHERE "occupations"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by OccupationsController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mOccupation Load (1.1ms)[0m  SELECT "occupations".* FROM "occupations" WHERE "occupations"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by OccupationsController#new as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mOccupation Load (1.1ms)[0m  [1mSELECT "occupations".* FROM "occupations" WHERE "occupations"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by OccupationsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mOccupation Load (0.9ms)[0m  SELECT "occupations".* FROM "occupations" WHERE "occupations"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by OccupationsController#update as HTML
+  Parameters: {"occupation"=>{"id"=>"980190962", "name"=>"MyString", "created_at"=>"2013-12-04 19:04:50 UTC", "updated_at"=>"2013-12-04 19:04:50 UTC"}, "id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mPreproductionCost Load (2.7ms)[0m  [1mSELECT "preproduction_costs".* FROM "preproduction_costs" WHERE "preproduction_costs"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (1.7ms)[0m  SELECT COUNT(*) FROM "preproduction_costs" 
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mPreproductionCost Load (1.6ms)[0m  [1mSELECT "preproduction_costs".* FROM "preproduction_costs" WHERE "preproduction_costs"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "preproduction_costs" 
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mPreproductionCost Load (1.6ms)[0m  [1mSELECT "preproduction_costs".* FROM "preproduction_costs" WHERE "preproduction_costs"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (1.1ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mPreproductionCost Load (1.3ms)[0m  SELECT "preproduction_costs".* FROM "preproduction_costs" WHERE "preproduction_costs"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mPreproductionCost Load (1.5ms)[0m  [1mSELECT "preproduction_costs".* FROM "preproduction_costs" WHERE "preproduction_costs"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mPreproductionCost Load (2.8ms)[0m  SELECT "preproduction_costs".* FROM "preproduction_costs" WHERE "preproduction_costs"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mPreproductionCost Load (1.0ms)[0m  [1mSELECT "preproduction_costs".* FROM "preproduction_costs" WHERE "preproduction_costs"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mProcedure Load (3.3ms)[0m  SELECT "procedures".* FROM "procedures" WHERE "procedures"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (1.2ms)[0m  [1mSELECT COUNT(*) FROM "procedures" [0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mProcedure Load (2.8ms)[0m  SELECT "procedures".* FROM "procedures" WHERE "procedures"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (1.2ms)[0m  [1mSELECT COUNT(*) FROM "procedures" [0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mProcedure Load (2.5ms)[0m  SELECT "procedures".* FROM "procedures" WHERE "procedures"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mProcedure Load (2.2ms)[0m  [1mSELECT "procedures".* FROM "procedures" WHERE "procedures"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mProcedure Load (2.1ms)[0m  SELECT "procedures".* FROM "procedures" WHERE "procedures"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mProcedure Load (2.5ms)[0m  [1mSELECT "procedures".* FROM "procedures" WHERE "procedures"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mProcedure Load (2.3ms)[0m  SELECT "procedures".* FROM "procedures" WHERE "procedures"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mProductionOrder Load (2.1ms)[0m  [1mSELECT "production_orders".* FROM "production_orders" WHERE "production_orders"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (1.2ms)[0m  SELECT COUNT(*) FROM "production_orders" 
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mProductionOrder Load (1.2ms)[0m  [1mSELECT "production_orders".* FROM "production_orders" WHERE "production_orders"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "production_orders" 
+Processing by ProductionOrdersController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "production_orders" [0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mProductionOrder Load (1.2ms)[0m  SELECT "production_orders".* FROM "production_orders" WHERE "production_orders"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by ProductionOrdersController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mProductionOrder Load (2.7ms)[0m  [1mSELECT "production_orders".* FROM "production_orders" WHERE "production_orders"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by ProductionOrdersController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mProductionOrder Load (1.5ms)[0m  SELECT "production_orders".* FROM "production_orders" WHERE "production_orders"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by ProductionOrdersController#new as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mProductionOrder Load (1.2ms)[0m  [1mSELECT "production_orders".* FROM "production_orders" WHERE "production_orders"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by ProductionOrdersController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mProductionOrder Load (0.9ms)[0m  SELECT "production_orders".* FROM "production_orders" WHERE "production_orders"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mProduction Load (2.0ms)[0m  [1mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "productions" 
+Processing by ProductionsController#create as HTML
+  Parameters: {"production"=>{"a_amount"=>"1", "amount_in"=>"1", "amount_out"=>"1", "b_amount"=>"1", "date_in"=>"MyString", "date_out"=>"MyString", "garment_id"=>"1", "preparation_days"=>"1", "remaining"=>"1", "user_id"=>"1"}}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "productions" [0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mProduction Load (1.4ms)[0m  SELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "productions" [0m
+Processing by ProductionsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "productions" 
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mProduction Load (1.3ms)[0m  [1mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by ProductionsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.7ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mProduction Load (2.0ms)[0m  SELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by ProductionsController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mProduction Load (1.4ms)[0m  [1mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by ProductionsController#new as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mProduction Load (1.4ms)[0m  SELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mProduction Load (1.0ms)[0m  [1mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by ProductionsController#update as HTML
+  Parameters: {"production"=>{"a_amount"=>"1", "amount_in"=>"1", "amount_out"=>"1", "b_amount"=>"1", "date_in"=>"MyString", "date_out"=>"MyString", "garment_id"=>"1", "preparation_days"=>"1", "remaining"=>"1", "user_id"=>"1"}, "id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mPurchaseDescription Load (1.9ms)[0m  SELECT "purchase_descriptions".* FROM "purchase_descriptions" WHERE "purchase_descriptions"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "purchase_descriptions" [0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mPurchaseDescription Load (1.2ms)[0m  SELECT "purchase_descriptions".* FROM "purchase_descriptions" WHERE "purchase_descriptions"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "purchase_descriptions" [0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mPurchaseDescription Load (1.2ms)[0m  SELECT "purchase_descriptions".* FROM "purchase_descriptions" WHERE "purchase_descriptions"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mPurchaseDescription Load (1.2ms)[0m  [1mSELECT "purchase_descriptions".* FROM "purchase_descriptions" WHERE "purchase_descriptions"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mPurchaseDescription Load (1.1ms)[0m  SELECT "purchase_descriptions".* FROM "purchase_descriptions" WHERE "purchase_descriptions"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.9ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mPurchaseDescription Load (1.4ms)[0m  [1mSELECT "purchase_descriptions".* FROM "purchase_descriptions" WHERE "purchase_descriptions"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mPurchaseDescription Load (0.9ms)[0m  SELECT "purchase_descriptions".* FROM "purchase_descriptions" WHERE "purchase_descriptions"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mPurchase Load (1.9ms)[0m  [1mSELECT "purchases".* FROM "purchases" WHERE "purchases"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "purchases" 
+Processing by PurchasesController#create as HTML
+  Parameters: {"purchase"=>{"date"=>"MyString", "supplier_id"=>"1"}}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "purchases" [0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mPurchase Load (1.2ms)[0m  SELECT "purchases".* FROM "purchases" WHERE "purchases"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "purchases" [0m
+Processing by PurchasesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "purchases" 
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mPurchase Load (1.4ms)[0m  [1mSELECT "purchases".* FROM "purchases" WHERE "purchases"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by PurchasesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mPurchase Load (1.4ms)[0m  SELECT "purchases".* FROM "purchases" WHERE "purchases"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by PurchasesController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mPurchase Load (1.6ms)[0m  [1mSELECT "purchases".* FROM "purchases" WHERE "purchases"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by PurchasesController#new as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mPurchase Load (1.3ms)[0m  SELECT "purchases".* FROM "purchases" WHERE "purchases"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by PurchasesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mPurchase Load (1.0ms)[0m  [1mSELECT "purchases".* FROM "purchases" WHERE "purchases"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by PurchasesController#update as HTML
+  Parameters: {"purchase"=>{"date"=>"MyString", "supplier_id"=>"1"}, "id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mReceiptDescription Load (2.0ms)[0m  SELECT "receipt_descriptions".* FROM "receipt_descriptions" WHERE "receipt_descriptions"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "receipt_descriptions" [0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mReceiptDescription Load (1.2ms)[0m  SELECT "receipt_descriptions".* FROM "receipt_descriptions" WHERE "receipt_descriptions"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "receipt_descriptions" [0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mReceiptDescription Load (1.8ms)[0m  SELECT "receipt_descriptions".* FROM "receipt_descriptions" WHERE "receipt_descriptions"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mReceiptDescription Load (1.1ms)[0m  [1mSELECT "receipt_descriptions".* FROM "receipt_descriptions" WHERE "receipt_descriptions"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mReceiptDescription Load (1.2ms)[0m  SELECT "receipt_descriptions".* FROM "receipt_descriptions" WHERE "receipt_descriptions"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mReceiptDescription Load (1.1ms)[0m  [1mSELECT "receipt_descriptions".* FROM "receipt_descriptions" WHERE "receipt_descriptions"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mReceiptDescription Load (1.1ms)[0m  SELECT "receipt_descriptions".* FROM "receipt_descriptions" WHERE "receipt_descriptions"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mReceiptHeader Load (2.0ms)[0m  [1mSELECT "receipt_headers".* FROM "receipt_headers" WHERE "receipt_headers"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "receipt_headers" 
+Processing by ReceiptHeadersController#create as HTML
+  Parameters: {"receipt_header"=>{"adress"=>"MyString", "city_id"=>"1", "client"=>"MyString", "identification"=>"MyString", "phone"=>"MyString"}}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "receipt_headers" [0m
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.8ms)[0m  [1mBEGIN[0m
+  [1m[35mReceiptHeader Load (1.4ms)[0m  SELECT "receipt_headers".* FROM "receipt_headers" WHERE "receipt_headers"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "receipt_headers" [0m
+Processing by ReceiptHeadersController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (1.2ms)[0m  SELECT COUNT(*) FROM "receipt_headers" 
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mReceiptHeader Load (1.2ms)[0m  [1mSELECT "receipt_headers".* FROM "receipt_headers" WHERE "receipt_headers"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by ReceiptHeadersController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mReceiptHeader Load (1.2ms)[0m  SELECT "receipt_headers".* FROM "receipt_headers" WHERE "receipt_headers"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by ReceiptHeadersController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mReceiptHeader Load (1.3ms)[0m  [1mSELECT "receipt_headers".* FROM "receipt_headers" WHERE "receipt_headers"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by ReceiptHeadersController#new as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mReceiptHeader Load (1.3ms)[0m  SELECT "receipt_headers".* FROM "receipt_headers" WHERE "receipt_headers"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by ReceiptHeadersController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mReceiptHeader Load (0.9ms)[0m  [1mSELECT "receipt_headers".* FROM "receipt_headers" WHERE "receipt_headers"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by ReceiptHeadersController#update as HTML
+  Parameters: {"receipt_header"=>{"adress"=>"MyString", "city_id"=>"1", "client"=>"MyString", "identification"=>"MyString", "phone"=>"MyString"}, "id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mRegional Load (2.3ms)[0m  SELECT "regionals".* FROM "regionals" WHERE "regionals"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (1.1ms)[0m  [1mSELECT COUNT(*) FROM "regionals" [0m
+Processing by RegionalsController#create as HTML
+  Parameters: {"regional"=>{"id"=>"980190962", "name"=>"MyString", "director"=>"MyString", "phone"=>"MyString", "ip"=>"MyString", "created_at"=>"2013-12-04 19:04:50 UTC", "updated_at"=>"2013-12-04 19:04:50 UTC"}}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "regionals" 
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mRegional Load (1.1ms)[0m  [1mSELECT "regionals".* FROM "regionals" WHERE "regionals"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "regionals" 
+Processing by RegionalsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 18ms (ActiveRecord: 0.0ms)
+  [1m[36m (1.6ms)[0m  [1mSELECT COUNT(*) FROM "regionals" [0m
+  [1m[35m (0.7ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mRegional Load (1.2ms)[0m  SELECT "regionals".* FROM "regionals" WHERE "regionals"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by RegionalsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mRegional Load (1.3ms)[0m  [1mSELECT "regionals".* FROM "regionals" WHERE "regionals"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by RegionalsController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mRegional Load (1.2ms)[0m  SELECT "regionals".* FROM "regionals" WHERE "regionals"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by RegionalsController#new as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mRegional Load (1.2ms)[0m  [1mSELECT "regionals".* FROM "regionals" WHERE "regionals"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by RegionalsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mRegional Load (1.0ms)[0m  SELECT "regionals".* FROM "regionals" WHERE "regionals"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by RegionalsController#update as HTML
+  Parameters: {"regional"=>{"id"=>"980190962", "name"=>"MyString", "director"=>"MyString", "phone"=>"MyString", "ip"=>"MyString", "created_at"=>"2013-12-04 19:04:50 UTC", "updated_at"=>"2013-12-04 19:04:50 UTC"}, "id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mRegion Load (2.4ms)[0m  [1mSELECT "regions".* FROM "regions" WHERE "regions"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "regions" 
+Processing by RegionsController#create as HTML
+  Parameters: {"region"=>{"name"=>"MyString"}}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "regions" [0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mRegion Load (1.3ms)[0m  SELECT "regions".* FROM "regions" WHERE "regions"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "regions" [0m
+Processing by RegionsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "regions" 
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mRegion Load (1.1ms)[0m  [1mSELECT "regions".* FROM "regions" WHERE "regions"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by RegionsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mRegion Load (1.1ms)[0m  SELECT "regions".* FROM "regions" WHERE "regions"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by RegionsController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mRegion Load (1.2ms)[0m  [1mSELECT "regions".* FROM "regions" WHERE "regions"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by RegionsController#new as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mRegion Load (1.2ms)[0m  SELECT "regions".* FROM "regions" WHERE "regions"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by RegionsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mRegion Load (1.0ms)[0m  [1mSELECT "regions".* FROM "regions" WHERE "regions"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by RegionsController#update as HTML
+  Parameters: {"region"=>{"name"=>"MyString"}, "id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+Processing by RolesController#create as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+Processing by RolesController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+Processing by RolesController#new as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 204ms
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mState Load (2.5ms)[0m  SELECT "states".* FROM "states" WHERE "states"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "states" [0m
+Processing by StatesController#create as HTML
+  Parameters: {"state"=>{"name"=>"MyString"}}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "states" 
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mState Load (1.1ms)[0m  [1mSELECT "states".* FROM "states" WHERE "states"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "states" 
+Processing by StatesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "states" [0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mState Load (1.1ms)[0m  SELECT "states".* FROM "states" WHERE "states"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by StatesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mState Load (1.1ms)[0m  [1mSELECT "states".* FROM "states" WHERE "states"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by StatesController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.7ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mState Load (1.2ms)[0m  SELECT "states".* FROM "states" WHERE "states"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by StatesController#new as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mState Load (1.2ms)[0m  [1mSELECT "states".* FROM "states" WHERE "states"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by StatesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mState Load (0.9ms)[0m  SELECT "states".* FROM "states" WHERE "states"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by StatesController#update as HTML
+  Parameters: {"state"=>{"name"=>"MyString"}, "id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSupplier Load (2.1ms)[0m  [1mSELECT "suppliers".* FROM "suppliers" WHERE "suppliers"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "suppliers" 
+Processing by SuppliersController#create as HTML
+  Parameters: {"supplier"=>{"adress"=>"MyString", "cell"=>"MyString", "city_id"=>"1", "doc_id"=>"1", "identification"=>"MyString", "ocupation"=>"MyString", "phone"=>"MyString", "responsible"=>"MyString", "social_reason"=>"MyString"}}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "suppliers" [0m
+  [1m[35m (0.8ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSupplier Load (1.6ms)[0m  SELECT "suppliers".* FROM "suppliers" WHERE "suppliers"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "suppliers" [0m
+Processing by SuppliersController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "suppliers" 
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSupplier Load (1.2ms)[0m  [1mSELECT "suppliers".* FROM "suppliers" WHERE "suppliers"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by SuppliersController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSupplier Load (1.4ms)[0m  SELECT "suppliers".* FROM "suppliers" WHERE "suppliers"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by SuppliersController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSupplier Load (1.7ms)[0m  [1mSELECT "suppliers".* FROM "suppliers" WHERE "suppliers"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by SuppliersController#new as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSupplier Load (1.3ms)[0m  SELECT "suppliers".* FROM "suppliers" WHERE "suppliers"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by SuppliersController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSupplier Load (1.0ms)[0m  [1mSELECT "suppliers".* FROM "suppliers" WHERE "suppliers"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by SuppliersController#update as HTML
+  Parameters: {"supplier"=>{"adress"=>"MyString", "cell"=>"MyString", "city_id"=>"1", "doc_id"=>"1", "identification"=>"MyString", "ocupation"=>"MyString", "phone"=>"MyString", "responsible"=>"MyString", "social_reason"=>"MyString"}, "id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mType Load (2.0ms)[0m  SELECT "types".* FROM "types" WHERE "types"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (1.5ms)[0m  [1mSELECT COUNT(*) FROM "types" [0m
+Processing by TypesController#create as HTML
+  Parameters: {"type"=>{"name"=>"MyString"}}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "types" 
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mType Load (1.2ms)[0m  [1mSELECT "types".* FROM "types" WHERE "types"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "types" 
+Processing by TypesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "types" [0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mType Load (1.1ms)[0m  SELECT "types".* FROM "types" WHERE "types"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by TypesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mType Load (1.1ms)[0m  [1mSELECT "types".* FROM "types" WHERE "types"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by TypesController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mType Load (1.2ms)[0m  SELECT "types".* FROM "types" WHERE "types"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by TypesController#new as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mType Load (1.2ms)[0m  [1mSELECT "types".* FROM "types" WHERE "types"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by TypesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mType Load (0.9ms)[0m  SELECT "types".* FROM "types" WHERE "types"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by TypesController#update as HTML
+  Parameters: {"type"=>{"name"=>"MyString"}, "id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mUnity Load (2.1ms)[0m  [1mSELECT "unities".* FROM "unities" WHERE "unities"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM "unities" 
+Processing by UnitiesController#create as HTML
+  Parameters: {"unity"=>{"name"=>"MyString"}}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "unities" [0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUnity Load (1.2ms)[0m  SELECT "unities".* FROM "unities" WHERE "unities"."id" = $1 LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "unities" [0m
+Processing by UnitiesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "unities" 
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUnity Load (1.1ms)[0m  [1mSELECT "unities".* FROM "unities" WHERE "unities"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by UnitiesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mUnity Load (1.5ms)[0m  SELECT "unities".* FROM "unities" WHERE "unities"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by UnitiesController#index as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUnity Load (1.2ms)[0m  [1mSELECT "unities".* FROM "unities" WHERE "unities"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by UnitiesController#new as HTML
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mUnity Load (1.2ms)[0m  SELECT "unities".* FROM "unities" WHERE "unities"."id" = $1 LIMIT 1  [["id", 980190962]]
+Processing by UnitiesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUnity Load (0.8ms)[0m  [1mSELECT "unities".* FROM "unities" WHERE "unities"."id" = $1 LIMIT 1[0m  [["id", 980190962]]
+Processing by UnitiesController#update as HTML
+  Parameters: {"unity"=>{"name"=>"MyString"}, "id"=>"980190962"}
+Redirected to http://test.host/
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 7ms
+  [1m[35m (0.5ms)[0m  ROLLBACK

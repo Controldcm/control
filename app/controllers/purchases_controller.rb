@@ -28,6 +28,7 @@ class PurchasesController < ApplicationController
   def create
     @purchase = Purchase.new(params[:purchase])
     @purchase.save
+    @purchases = Purchase.all
   end
 
 
@@ -38,7 +39,9 @@ class PurchasesController < ApplicationController
 
 
   def destroy
+    PurchaseDescription.where(:purchase_id => @purchase.id).destroy_all
     @purchase.destroy
+    @purchases = Purchase.all
   end
 
   private

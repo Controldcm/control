@@ -1,0 +1,9 @@
+<tr id=<%= "role_#{role.id}" %>>
+ <td><%= role.name %></td>
+ <td>
+ 	<%= link_to image_tag('edit.png', :width=>'30', :title=>'Editar' ), edit_role_path(role), :remote => true %> |
+    <%= link_to image_tag('destroy.png', :width=>'30', :title=>'Eliminar' ), role, 
+       :data => { :confirm => 'Esta Seguro?' },
+       :method => :delete, :remote => true %>
+ </td>
+</tr>

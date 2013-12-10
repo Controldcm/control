@@ -1,5 +1,4 @@
 <tr id=<%= "country_#{country.id}" %>>
-	<td><%= link_to country.id, country_path(country) %></td>
 	<td><%= country.name %></td>
 	<td>
 	   <%= link_to image_tag('ver.png', :width=>'30', :title=>'Mostrar' ), country, :remote => true %> |

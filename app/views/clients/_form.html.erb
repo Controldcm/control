@@ -25,7 +25,6 @@
                              :input_html => {:class => 'span4' } %>
                     </div>
                 </div>
-                <br>
                 <div class="control-group">
                     <label class="control-label" for="inputName">Identificación</label>
                     <div class="controls">
@@ -77,8 +76,7 @@
                 <div class="control-group">
                     <label class="control-label" for="inputName">Ciudad</label>
                     <div class="controls">
-                         <%= f.autocomplete_field :city_name, autocomplete_city_name_clients_path,
-                             :id_element => '#id', :class => "span4" %>
+                         <%= f.association :city, :collection => City.all(:order => 'name'), :label => false, :class => "span4" %>
                     </div>
                 </div>
 

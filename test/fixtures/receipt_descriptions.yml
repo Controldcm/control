@@ -3,13 +3,13 @@
 one:
   amount: 1
   garment_id: 1
+  receipt_header_id: 1
   unity_value: 1.5
   total_value: 1.5
-  total: 1.5
 
 two:
   amount: 1
   garment_id: 1
+  receipt_header_id: 1
   unity_value: 1.5
   total_value: 1.5
-  total: 1.5

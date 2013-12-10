@@ -90,7 +90,7 @@ Garment.create([
   { :name => "Camisa", :reference => "CAM-MASC-004", :code => "", :gender => "1", :type_id => 5, :created_at => "2013-04-24 20:46:31", :updated_at => "2013-07-03 00:07:12", :stock => 34, :store => 2, :stock_price => 5500.0 },
   { :name => "Pijama", :reference => "PIJ-MASC", :code => "", :gender => "1", :type_id => 5, :created_at => "2013-04-24 20:54:55", :updated_at => "2013-04-24 20:57:45", :stock => nil, :store => nil, :stock_price => 2800.0 },
   { :name => "Camisa Manga Larga", :reference => "CAM-MASC-ML-004", :code => "", :gender => "1", :type_id => 6, :created_at => "2013-04-25 17:59:14", :updated_at => "2013-07-03 00:07:18", :stock => 432, :store => 23, :stock_price => 6300.0 },
-  { :name => "JEAN MASCULINO (5 BOLSILLOS)", :reference => "JM5B", :code => "", :gender => "1", :type_id => 1, :created_at => "2013-04-25 18:13:06", :updated_at => "2013-04-25 18:13:06", :stock => nil, :store => nil, :stock_price => 8000.0 }
+  { :name => "Jean Masculino (5 BOLSILLOS)", :reference => "JM5B", :code => "", :gender => "1", :type_id => 1, :created_at => "2013-04-25 18:13:06", :updated_at => "2013-04-25 18:13:06", :stock => nil, :store => nil, :stock_price => 8000.0 }
 ], :without_protection => true )
 
 

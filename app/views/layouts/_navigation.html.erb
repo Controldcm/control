@@ -3,17 +3,11 @@
 </div>
 
 <% if  can? :manage, :admin %>
-    <li id='admin'><a href="#myModal" role="button"  data-toggle="modal">Admin</a></li>
-    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    	<%= render 'layouts/modal_admin' %>
-	</div>
+    <li  id='admin'><%= link_to 'Admin', :admin, :class=>'colc', :remote => true  %></li>
 <% end %>       
 
 <% if can? :manage, [:entrances, :inputs] %>
-	<li id='invent'> <a href="#myModall" role="button"  data-toggle="modal">Inventario</a></li>
-	<div id="myModall" class="modal hide fade" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    	<%= render 'layouts/modal_inventory' %>
-	</div>
+	<li  id='invent'><%= link_to 'Inventario', :inventory, :class=>'colc', :remote => true  %></li>
 <% end %>	
 
 <% if can? :manage, Client %>
@@ -33,10 +27,7 @@
 <% end %>
 
 <% if can? :manage, ProductionOrder %>
-<li id='produc'><%= link_to 'Estadisticas', :statistics, :class=>'colc' %></li>
+<li id='produc'><%= link_to 'Estadisticas', :statistics, :class=>'colc', :remote => true %></li>
 <% end %>
 
-<li id='almacen'><a href="#myModaal" role="button"  data-toggle="modal">Ayuda</a></li>
-<div id="myModaal" class="modal hide fade" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <%= render 'layouts/modal_help' %>       
-</div>
+<li  id='almacen'><%= link_to 'Ayuda', :help, :class=>'colc', :remote => true  %></li>

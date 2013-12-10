@@ -19,45 +19,42 @@
         <div id='decla'>
           <MARQUEE id='MARQUEE' WIDTH='60%' HEIGHT='20'><b>Mas Trabajo</b></MARQUEE>
         </div>
-          </div>
-      
-          <%= render 'layouts/navigation' %> 
-
-        
-      <% if  current_user %>  
-        <li style="float:right; ", id='salir'>
-          <%= link_to image_tag("door.png", :size => "22x22", :title=> 'salir'), :logout, :class=>'colc' %></li>
-      <% else %> 
-      <li id='login'><%= link_to "Ingresar", :login, :remote => true, :class=>'colc' %></li>
-      <div id='play'>
-       <%= link_to image_tag('play.png', :width=>'30', :title=>'Como Ingresar'),ingresolo_path, :remote => true %> 
       </div>
-   <% end %>
-    <div id="main" role="main" class='well'>
-      <div class="container">
-        <div class="content">
-           <div class="row">
-            <div class="span12">
-              <%= render 'layouts/messages' %>
-              <%= yield %>
+          <% if  current_user %>  
+            <%= render 'layouts/navigation' %>
+            <li style="float:right; ", id='salir'>
+            <%= link_to image_tag("door.png", :size => "22x22", :title=> 'salir'), :logout, :class=>'colc' %></li>
+              <% else %> 
+            <li id='login'><%= link_to "Ingresar", :login, :remote => true, :class=>'colc' %></li>
+            <div id='play'>
+              <%= link_to image_tag('play.png', :width=>'30', :title=>'Como Ingresar'),ingresolo_path, :remote => true %> 
             </div>
-          </div>
-        </div>
-      </div> <!--! end of .container -->
-    </div> <!--! end of #main -->
-     <footer id='foter'>
-       <small id='by'>
-         <MARQUEE WIDTH='50%' HEIGHT='60'>
-        By ADSI 323921. - ADSI - Todos los derechos reservados ©Copyright 2013 ::. 
-        </MARQUEE>
-      </small>
-      <nav id='by'>
-        <ul>
-          <li><%= link_to "Créditos", :about, :remote => true, :class=>'colc2' %></li>
-          <li><a href="http://www.sena.edu.co/" class="colc2">SENA</a></li>
-        </ul>
-      </nav>
-    </footer>
+          <% end %> 
+          <div id="main" role="main" class='well'>
+            <div class="container">
+              <div class="content">
+                 <div class="row">
+                  <div class="span12">
+                    <%= render 'layouts/messages' %>
+                    <%= yield %>
+                  </div>
+                </div>
+              </div>
+            </div> <!--! end of .container -->
+          </div> <!--! end of #main -->
+         <footer id='foter'>
+           <small id='by'>
+             <MARQUEE WIDTH='50%' HEIGHT='60'>
+            By ADSI 323921. - ADSI - Todos los derechos reservados ©Copyright 2013 ::. 
+            </MARQUEE>
+          </small>
+          <nav id='by'>
+            <ul>
+              <li><%= link_to "Créditos", :about, :remote => true, :class=>'colc2' %></li>
+              <li><a href="http://www.sena.edu.co/" class="colc2">SENA</a></li>
+            </ul>
+          </nav>
+        </footer>
     </div>
   </body>
 </html>

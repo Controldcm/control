@@ -1,2 +1,3 @@
 $('table tbody').append("<%= escape_javascript(render @receipt_header) %>")
-$.lazybox.close()
+$.lazybox.close();
+$("#total_r").val("<%= @receipt_headers.count %>");

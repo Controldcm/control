@@ -2,14 +2,14 @@
 
 one:
   programing_date: MyString
-  cliente_id: 1
+  client_id: 1
   op: 1
   garment_id: 1
   programed_amount: 1
 
 two:
   programing_date: MyString
-  cliente_id: 1
+  client_id: 1
   op: 1
   garment_id: 1
   programed_amount: 1

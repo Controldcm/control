@@ -26,5 +26,5 @@
                                 :previous_label => '&laquo; Anterior', 
                                 :next_label => 'Siguiente &raquo;') %>
    </ul>
-   <p id='total' class="pull-right">Total Recibos : <%= @receipt_headers.count %></p>
+   <p id='total' class="pull-right">Total Recibos : <input type="text" id='total_r' name="total_r" value="<%= @receipt_headers.count %>"></p>
 </div>

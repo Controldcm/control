@@ -10,11 +10,11 @@
                <div class = "row">
                     <div class="span5">
                          <b>Produccion</b>
-                           <%= text_field_tag :name, params[:name], 
+                           <%= text_field_tag :search, params[:search], 
                           :class=>"span4" %>
                     </div>
                     <div class="span1">
-                        <%= submit_tag "Buscar", :name => nil, :class => 'btn btn-primary' %>
+                        <%= submit_tag "Buscar", :op => nil, :class => 'btn btn-primary' %>
                     </div>
                      <%= hidden_field_tag :ind, "1" %>
                </div>

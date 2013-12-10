@@ -7,6 +7,7 @@ one:
   labeling: 1.5
   printing: 1.5
   production_order_id: 1
+  cost: 1.5
 
 two:
   plotting: 1.5
@@ -15,3 +16,4 @@ two:
   labeling: 1.5
   printing: 1.5
   production_order_id: 1
+  cost: 1.5

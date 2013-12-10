@@ -48,9 +48,7 @@
             <div class="row">
                 <div class="span9">Centro de Formación</div>
                 <div class="span9">
-                   <%= f.input :center_name, :url => autocomplete_center_name_users_path, 
-                               :as => :autocomplete, 
-                               :update_elements => {:center_id => '#user_center_id'}, :label => false, 
+                   <%= f.association :center, :collection => Center.all(:order => 'name'), :label => false, 
                                :input_html => {:class => 'span9'} %>
                 </div>
             </div>
